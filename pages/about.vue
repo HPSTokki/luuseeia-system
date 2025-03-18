@@ -4,8 +4,7 @@
 
 <template>
     <div>
-        <h1 class="text-2xl font-sans">Index Page</h1>
-        <p>Hi Po</p>
+        <h1>About Page</h1>
     </div>
 </template>
 
