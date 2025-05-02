@@ -5,5 +5,6 @@ export default defineNuxtConfig({
   modules: ['@nuxt/image', '@nuxt/icon', '@nuxtjs/tailwindcss'],
   image: {
     directory: 'public/',
-  }
+  },
+  css: ['@/assets/styles/global.css'],
 })

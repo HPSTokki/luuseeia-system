@@ -1,0 +1,14 @@
+:root {
+
+    /* Main Colors */
+
+    --color-1: #C1FFCB;
+    --large-text-button: #00923F;
+    --general-text: #1F1F1F;
+
+    /* Sidebar Colors */
+
+    --sidebar-bg: #F5F8F6;
+    --sidebar-text: #000000;
+    --sidebar-text-2: #6F6B6B;
+}

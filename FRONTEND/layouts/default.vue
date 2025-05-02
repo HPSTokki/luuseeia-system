@@ -1,7 +1,7 @@
 <template>
-    <header id="header" class="px-5 py-2 text-black bg-white shadow-md">
+    <header id="header" class="px-5 py-1 text-black bg-white shadow-md">
         <nav class="flex justify-between items-center">
-            <div id="logoContainer" class="flex items-center">
+            <div id="logoContainer" class="flex items-center select-none ">
                 <NuxtImg src="/LuSeeIA-Logo.png" alt="LuSeeIA"/>
             </div>
             <ul class="flex gap-4">
@@ -19,12 +19,14 @@
         <div id="footerLogoContainer">
             <NuxtImg src="/LuSeeIA-Logo.png" alt="LuSeeIA Logo" />
         </div>
-        <div id="footerTextContainer">
-            <h3>CONTACTS</h3>
-            <p>Address: JP Rizal Street Sta, Lucia Novaliches, Quezon City, Metro Manila<br>
-                Tel No.:9300309<br>Email: hsstalucia@depedqc.ph</p>
+        <div id="copyRight">
             <p>LuSeeIA &copy; 2023</p>
             <p>All rights reserved</p>
+        </div>
+        <div id="footerTextContainer">
+            <h3 class="">CONTACTS</h3>
+            <p>Address: JP Rizal Street Sta, Lucia Novaliches, Quezon City, Metro Manila<br>
+                Tel No.:9300309<br>Email: <a href="mailto:hsstalucia@depedqc.ph">hsstalucia@depedqc.ph</a></p>
         </div>
     </footer>
 
@@ -36,11 +38,9 @@
 
 <style>
     #footer {
-        @apply p-2 flex items-center justify-between bg-gray-100 text-gray-900 gap-24;
-    }
-
-    #footer hr{
-        width: 1px;
+        @apply p-2 flex items-center justify-between text-gray-900 gap-24;
+        background-color: var(--color-1);
+        height: 15%;
     }
 
     #footer #footerLogoContainer {
@@ -49,14 +49,26 @@
 
     #footer #footerLogoContainer img {
         @apply w-full h-full object-contain;
+        user-select: none;
+        pointer-events: none;
     }
 
     #footer #footerTextContainer {
         @apply flex-1;
+        
+    }
+
+    #footer #footerTextContainer h3 {
+        @apply text-2xl font-bold;
+        color: var(--large-text-button);
+    }
+
+    #footer #footerTextContainer p a {
+        @apply font-bold underline-offset-2 underline;
     }
 
     #logoContainer {
-        height: 10%;
+        height: 15%;
         width: 5%;
     }
 </style>
