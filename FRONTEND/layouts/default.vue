@@ -36,15 +36,16 @@
 
 </script>
 
-<style>
+<style scoped>
     #footer {
         @apply p-2 flex items-center justify-between text-gray-900 gap-24;
         background-color: var(--color-1);
-        height: 15%;
+        height: 12%;
+        font-size: 0.7rem
     }
 
     #footer #footerLogoContainer {
-        @apply w-24 h-24 flex items-center justify-center flex-1;
+        @apply w-10 h-10 flex items-center justify-center flex-1;
     }
 
     #footer #footerLogoContainer img {
